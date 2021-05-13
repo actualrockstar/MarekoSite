@@ -1,11 +1,18 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 22pt;
+ 
+  
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 35vmin;
+  pointer-events: auto;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,9 +31,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +39,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+button {
+  padding: 10px 60px;
+  border-radius: 10px;
+  font-size: large;
+  background-color: cornflowerblue;
+  z-index: 1;
+}
+
+button:hover {
+  box-shadow: blueviolet;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+
+
+
+.nav-link1 {
+  position: fixed;
+  bottom: 25%;
+  left: 17%;
+}
+
+.nav-link2 {
+  position: fixed;
+  bottom: 25%;
+  right: 20%;
+}
+.nav-link3 {
+  position: fixed;
+  bottom: 15%;
+  left: 17%;
+}
+.nav-link4 {
+  position: fixed;
+  bottom: 15%;
+  right: 20%;
 }

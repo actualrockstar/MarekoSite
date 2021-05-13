@@ -1,0 +1,66 @@
+.logo {
+    
+    width: 55vw;
+    height: auto;
+    position: fixed;
+    left: 5%;
+}
+
+.header-main {
+  position: absolute;
+    z-index: 1;
+}
+
+.magazine {
+  width: 40vw;
+  height: 40vh;
+  will-change: transform;
+  display: flex;
+  position: absolute;
+}
+
+.socials{
+  direction: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 25pt;
+  top: 45%;
+  margin: 0;
+  padding: 0;
+}
+
+.anime {
+    width: 100%;
+    overflow: hidden;
+}
+
+.outer{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: auto;
+  height: auto;
+  max-width: 80vw;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.inner {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55vh;
+  max-width: 80vw;
+  height: 70vh;
+  will-change: transform;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+.embed {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
