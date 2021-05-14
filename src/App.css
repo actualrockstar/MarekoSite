@@ -4,12 +4,13 @@
   height: 100vh;
   color: white;
   font-size: 22pt;
- 
+ background-color: black;
+ overflow: hidden;
   
 }
 
 .App-logo {
-  height: 35vmin;
+  height: 30vmin;
   pointer-events: auto;
 }
 
@@ -41,6 +42,7 @@
   }
 }
 button {
+  font-family: 'Turret Road', cursive;
   padding: 10px 60px;
   border-radius: 10px;
   font-size: large;
@@ -67,19 +69,34 @@ button:hover {
   bottom: 25%;
   left: 17%;
 }
-
+.nav-link1:hover{
+  background-color:lavender;
+  opacity: 0.5;
+}
 .nav-link2 {
   position: fixed;
   bottom: 25%;
   right: 20%;
+}
+.nav-link2:hover{
+  background-color:lavender;
+  opacity: 0.5;
 }
 .nav-link3 {
   position: fixed;
   bottom: 15%;
   left: 17%;
 }
+.nav-link3:hover{
+  background-color:lavender;
+  opacity: 0.5;
+}
 .nav-link4 {
   position: fixed;
   bottom: 15%;
   right: 20%;
+}
+.nav-link4:hover{
+  background-color:lavender;
+  opacity: 0.5;
 }

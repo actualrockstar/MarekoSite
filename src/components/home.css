@@ -1,14 +1,18 @@
 .logo {
     
-    width: 55vw;
+    width: 55vh;
     height: auto;
-    position: fixed;
-    left: 5%;
+
 }
 
 .header-main {
   position: absolute;
     z-index: 1;
+}
+
+.h1:hover{
+  background-color: lavenderblush;
+  opacity: .5;
 }
 
 .magazine {
@@ -59,8 +63,55 @@
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
 }
 
+  
+.video {
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
 .embed {
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 25%;
+}
+
+.musicLinks {
+  display: flex;
+  flex-direction: column;
+  font-size: 7vw;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+}
+
+.mlink1{
+  background-color: white;
+  position: relative;
+  margin-bottom: 15px;
+}
+.mlink1:hover{
+  opacity: 0.5;
+}
+.mlink2{
+  background-color: white;
+  position: relative;
+  margin-bottom: 15px;
+}
+.mlink2:hover{
+  opacity: 0.5;
+}
+.mlink3{
+  background-color: white;
+  position: relative;
+  margin-bottom: 15px;
+}
+.mlink3:hover{
+  opacity: 0.5;
 }

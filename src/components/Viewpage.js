@@ -25,18 +25,16 @@ function Viewpage() {
     const [springs, api] = useSprings(images.length, i => ({ ...to(i), from: from(i) }))
     
     const bind = useDrag(({args:[index], down, movement: [mx], delta: [xDelta], direction:[xDir], velocity, distance }) => {
-        const trigger = velocity > 0.1;
-        const dir = xDir < 0 ? -1 : 1;
+        const trigger = velocity > 0.05;
         const moveX = (mx / window.innerHeight) * 100;
         if (!down && trigger) gone.add(index);
         api.start(i => {
           if (index !== i) return;
-            const isGone = gone.has(index);
             const rot = trigger ? [360 * (moveX/100),180,360*(moveX/100)] : [0,0, 0];
             
-            const pos = mx < 0 ? [-350-mx*Math.random(),mx*i,0] : [0,0,0];
+            const pos = mx < 0 ? [30*mx,0,0] : [0,0,0];
             const z = i/.5;
-            if (down) {console.log(pos)}
+            //if (down) {console.log(gone)}
             const scale = down ? 1.1 : 1;
             return {pos, z, scale, rot}
         });

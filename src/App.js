@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Welcome from './components/Welcome';
 import Music from './components/Music';
 import Store from './components/Store';
+import Video from './components/Video';
 
 function App() {
   
@@ -16,9 +17,9 @@ function App() {
         <Switch>
           <Route exact path='/' component={Welcome}/>
           <Route exact path='/Home' component={Home}/>
-          <Route exct path='/Music' component={Music}/>
-          
-          <Route exct path='/Store' component={Store}/>
+          <Route exact path='/Music' component={Music}/>
+          <Route exact path='/Store' component={Store}/>
+          <Route exact path='/Video' component={Video}/>
         </Switch>
       </Router>
       

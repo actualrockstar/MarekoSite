@@ -11,7 +11,6 @@ function Welcome() {
     function enterSite() {
       console.log("Enter site pressed");
       setEnter(true);
-      console.log(enter);
     }
   
     if (enter){
